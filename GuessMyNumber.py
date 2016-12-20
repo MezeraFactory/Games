@@ -1,23 +1,13 @@
 
 import random
-from tkinter import *
-
-def stopProg(e):
-    root.destroy()
-
-
 
 computerNumber = random.randint(1,10)
-root =  Tk()
 
-button1=Button(root,text="Hello World click to close")
-button1.pack()
-button1.bind('<Button-1>',stopProg)
 
 print('Welcome to guess a number between 1 and 10!')
 
 try:
-    guess=int(input(inputstring))
+    guess=int(input("Guess "))
 except:
     print("You didn't choose a number")
     exit(0)
